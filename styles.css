@@ -1,0 +1,33 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#timer {
+  font-size: 60px;
+  position: relative;
+}
+
+.rotate {
+  animation: spin 3s linear infinite;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body {
+  background-color: rgb(224, 158, 224);
+}
